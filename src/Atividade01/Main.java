@@ -4,7 +4,7 @@ import java.util.Scanner;//Biblioteca da classe Scanner
 
 public class Main { //essa é nossa classe "principal" e publica.
     public static void main(String[] args) { //Aqui é o metodo inicial para omeçarmos a escrever o codigo.
-        //Seria nosso (Inicio) em portugol
+        //Seria nosso (Inicio) em portugol//
 
 
         Scanner scanner = new Scanner(System.in);
