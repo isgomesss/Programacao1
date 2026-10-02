@@ -19,6 +19,31 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
+        int total = 0;
+        int validos = 0;
+        int invalidos = 0;
+
+        System.out.print("Digite um nome de usuário ou fim para encerrar: ");
+        String nome = scanner.nextLine();
+
+        while (!nome.equalsIgnoreCase("fim")) {
+            total++;
+
+            if (nome.length() >= 5 && Character.isLetter(nome.charAt(0))) {
+                System.out.println("Usuário válido");
+                validos++;
+            } else {
+                System.out.println("Usuário inválido");
+                invalidos++;
+            }
+
+            System.out.print("Digite um nome de usuário (ou \"fim\" para encerrar): ");
+            nome = scanner.nextLine();
+        }
+
+        System.out.println("Usuários informados: " + total);
+        System.out.println("Usuários válidos: " + validos);
+        System.out.println("Usuários inválidos: " + invalidos);
 
     }
 }
